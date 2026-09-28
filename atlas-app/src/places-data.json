@@ -1,0 +1,731 @@
+[
+  {
+    "id": "konigsberg-castle",
+    "cityId": "kaliningrad",
+    "kind": "castle",
+    "coordinates": [
+      20.5095709,
+      54.7104457
+    ],
+    "states": {
+      "now": {
+        "name": "Место Королевского замка",
+        "description": "Замок утрачен. На карте отмечено место его западного флигеля; это исторический узел города, а не сохранившееся здание."
+      },
+      "kant": {
+        "name": "Королевский замок",
+        "description": "Бывший орденский замок в центре Кёнигсберга. В XVIII веке комплекс сохраняет своё место в городской жизни."
+      },
+      "order": {
+        "name": "Замок Кёнигсберг",
+        "description": "Орденский замок у Прегеля, с которого началось развитие Кёнигсберга. Позднее — резиденция великого магистра.",
+        "date": "Основание · 1255"
+      }
+    },
+    "sources": [
+      {
+        "title": "История и описание объекта",
+        "url": "https://ru.wikipedia.org/wiki/Кёнигсбергский_замок"
+      },
+      {
+        "title": "Координаты · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/way/701517163"
+      }
+    ]
+  },
+  {
+    "id": "konigsberg-cathedral",
+    "cityId": "kaliningrad",
+    "kind": "church",
+    "coordinates": [
+      20.511667,
+      54.706111
+    ],
+    "states": {
+      "now": {
+        "name": "Кафедральный собор",
+        "description": "Восстановленный собор на острове Канта: музейные экспозиции и органные концерты."
+      },
+      "kant": {
+        "name": "Собор Кнайпхофа",
+        "description": "Лютеранский собор рядом с университетом Альбертина. Место связано с жизнью университетского города."
+      },
+      "order": {
+        "name": "Собор Кнайпхофа",
+        "description": "Кирпичный готический собор на острове Кнайпхоф. Его строительство относится к XIV веку.",
+        "date": "Строительство · 1333–1380"
+      }
+    },
+    "sources": [
+      {
+        "title": "История и описание объекта",
+        "url": "https://ru.wikipedia.org/wiki/Кафедральный_собор_Кёнигсберга"
+      }
+    ]
+  },
+  {
+    "id": "old-albertina",
+    "cityId": "kaliningrad",
+    "kind": "monument",
+    "coordinates": [
+      20.5130576,
+      54.7065705
+    ],
+    "states": {
+      "now": {
+        "name": "Место старой Альбертины",
+        "description": "Памятный знак на месте старого здания Кёнигсбергского университета."
+      },
+      "kant": {
+        "name": "Старая Альбертина",
+        "description": "Университет на Кнайпхофе, где Кант учился и преподавал. Отмечено место старого университетского здания.",
+        "date": "Основание университета · 1544"
+      }
+    },
+    "sources": [
+      {
+        "title": "История и описание объекта",
+        "url": "https://ru.wikipedia.org/wiki/Кёнигсбергский_университет"
+      },
+      {
+        "title": "Координаты · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/node/926631143"
+      }
+    ]
+  },
+  {
+    "id": "fish-village",
+    "cityId": "kaliningrad",
+    "kind": "quarter",
+    "coordinates": [
+      20.5146446,
+      54.705097
+    ],
+    "states": {
+      "now": {
+        "name": "Рыбная деревня",
+        "description": "Современный квартал у Преголи с набережной и видовой башней. Точка отмечает башню внутри квартала."
+      }
+    },
+    "sources": [
+      {
+        "title": "История и описание объекта",
+        "url": "https://ru.wikipedia.org/wiki/Рыбная_деревня"
+      },
+      {
+        "title": "Координаты · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/way/148564494"
+      }
+    ],
+    "photoCityId": "kaliningrad"
+  },
+  {
+    "id": "tilsit-castle",
+    "cityId": "sovetsk",
+    "kind": "castle",
+    "coordinates": [
+      21.907222,
+      55.081389
+    ],
+    "states": {
+      "now": {
+        "name": "Руины замка Тильзит",
+        "description": "Частично сохранившиеся остатки замкового комплекса у Немана."
+      },
+      "kant": {
+        "name": "Замок Тильзит",
+        "description": "Старый замок внутри растущего торгового города. В этот период ещё сохраняет военное использование."
+      },
+      "order": {
+        "name": "Замок Тильзит",
+        "description": "Пограничная крепость Тевтонского ордена на Немане. Поселение рядом позднее станет городом.",
+        "date": "Строительство · 1404–1410"
+      }
+    },
+    "sources": [
+      {
+        "title": "История и описание объекта",
+        "url": "https://ru.wikipedia.org/wiki/Замок_Тильзит"
+      }
+    ]
+  },
+  {
+    "id": "queen-louise-bridge",
+    "cityId": "sovetsk",
+    "kind": "bridge",
+    "coordinates": [
+      21.9053734,
+      55.0832235
+    ],
+    "states": {
+      "now": {
+        "name": "Мост королевы Луизы",
+        "description": "Мост через Неман и его исторический портал — один из узнаваемых символов Советска.",
+        "date": "Открытие · 1907"
+      }
+    },
+    "sources": [
+      {
+        "title": "История и описание объекта",
+        "url": "https://visit-kaliningrad.ru/blog/sovetsk/"
+      },
+      {
+        "title": "Координаты · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/way/36823080"
+      }
+    ]
+  },
+  {
+    "id": "tilsit-water-tower",
+    "cityId": "sovetsk",
+    "kind": "tower",
+    "coordinates": [
+      21.8813871,
+      55.0840407
+    ],
+    "states": {
+      "now": {
+        "name": "Водонапорная башня Тильзита",
+        "description": "Башня у железнодорожного узла — памятник технической архитектуры города."
+      }
+    },
+    "sources": [
+      {
+        "title": "История и описание объекта",
+        "url": "https://visit-kaliningrad.ru/blog/sovetsk/"
+      },
+      {
+        "title": "Координаты · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/way/379086807"
+      }
+    ]
+  },
+  {
+    "id": "insterburg-castle",
+    "cityId": "chernyakhovsk",
+    "kind": "castle",
+    "coordinates": [
+      21.8067414,
+      54.6396478
+    ],
+    "states": {
+      "now": {
+        "name": "Замок Инстербург",
+        "description": "Сохранившиеся части орденского комплекса и руины замка в историческом центре Черняховска."
+      },
+      "kant": {
+        "name": "Замок Инстербург",
+        "description": "Средневековый комплекс в составе города Инстербурга."
+      },
+      "order": {
+        "name": "Замок Инстербург",
+        "description": "Орденский форпост в Надровии, предшествующий городскому поселению.",
+        "date": "Основание · 1336"
+      }
+    },
+    "sources": [
+      {
+        "title": "История и описание объекта",
+        "url": "https://visit-kaliningrad.ru/entertainment/sights/castles/zamok-insterburg/"
+      },
+      {
+        "title": "Координаты · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/way/81028924"
+      }
+    ]
+  },
+  {
+    "id": "insterburg-water-tower",
+    "cityId": "chernyakhovsk",
+    "kind": "tower",
+    "coordinates": [
+      21.8173834,
+      54.6359648
+    ],
+    "states": {
+      "now": {
+        "name": "Водонапорная башня Инстербурга",
+        "description": "Городская водонапорная башня — объект технического наследия Черняховска."
+      }
+    },
+    "sources": [
+      {
+        "title": "Координаты · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/node/6393279785"
+      }
+    ]
+  },
+  {
+    "id": "salzburg-church",
+    "cityId": "gusev",
+    "kind": "church",
+    "coordinates": [
+      22.195,
+      54.586944
+    ],
+    "states": {
+      "now": {
+        "name": "Зальцбургская кирха",
+        "description": "Лютеранская кирха, нынешнее здание которой построено в XIX веке.",
+        "date": "Нынешнее здание · 1839–1840"
+      },
+      "kant": {
+        "name": "Первая Зальцбургская кирха",
+        "description": "На этом месте зальцбургские переселенцы построили временную кирху. Нынешнее каменное здание появится позднее.",
+        "date": "Первый храм · 1752–1754"
+      }
+    },
+    "sources": [
+      {
+        "title": "История и описание объекта",
+        "url": "https://ru.wikipedia.org/wiki/Зальцбургская_кирха"
+      }
+    ]
+  },
+  {
+    "id": "gusev-museum",
+    "cityId": "gusev",
+    "kind": "museum",
+    "coordinates": [
+      22.2062315,
+      54.5963225
+    ],
+    "states": {
+      "now": {
+        "name": "Историко-краеведческий музей",
+        "description": "Музей истории города и края имени А. М. Иванова.",
+        "date": "Основание музея · 1991"
+      }
+    },
+    "sources": [
+      {
+        "title": "История и описание объекта",
+        "url": "https://visit-kaliningrad.ru/entertainment/culture/museums/gusevskij-istoriko-kraevedcheskij-muzej-im-a-m-ivanova/"
+      },
+      {
+        "title": "Координаты · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/way/107780156"
+      }
+    ]
+  },
+  {
+    "id": "gumbinnen-government",
+    "cityId": "gusev",
+    "kind": "building",
+    "coordinates": [
+      22.201897,
+      54.5918828
+    ],
+    "states": {
+      "now": {
+        "name": "Дом с часами",
+        "description": "Бывшее здание правительства округа Гумбиннен — заметный городской ориентир."
+      }
+    },
+    "sources": [
+      {
+        "title": "История и описание объекта",
+        "url": "https://visit-kaliningrad.ru/blog/gusev/"
+      },
+      {
+        "title": "Координаты · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/node/4945622321"
+      }
+    ]
+  },
+  {
+    "id": "pillau-citadel",
+    "cityId": "baltiysk",
+    "kind": "castle",
+    "coordinates": [
+      19.8874826,
+      54.6426599
+    ],
+    "states": {
+      "now": {
+        "name": "Цитадель Пиллау",
+        "description": "Звездообразная крепость у морского пролива. Это укрепление XVII века, а не орденский замок."
+      },
+      "kant": {
+        "name": "Крепость Пиллау",
+        "description": "Крепость защищает важный порт у входа в залив.",
+        "date": "Начало строительства · 1626"
+      }
+    },
+    "sources": [
+      {
+        "title": "История и описание объекта",
+        "url": "https://visit-kaliningrad.ru/entertainment/sights/forty-i-bastiony/citadel-pillau/"
+      },
+      {
+        "title": "Координаты · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/way/48371990"
+      }
+    ]
+  },
+  {
+    "id": "baltiysk-lighthouse",
+    "cityId": "baltiysk",
+    "kind": "tower",
+    "coordinates": [
+      19.8933282,
+      54.6388085
+    ],
+    "states": {
+      "now": {
+        "name": "Балтийский маяк",
+        "description": "Маяк у входа в пролив. Нынешняя башня относится к XIX веку.",
+        "date": "Нынешняя башня · 1813–1816"
+      }
+    },
+    "sources": [
+      {
+        "title": "История и описание объекта",
+        "url": "https://ru.wikipedia.org/wiki/Балтийский_маяк"
+      },
+      {
+        "title": "Координаты · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/way/223723630"
+      }
+    ]
+  },
+  {
+    "id": "murarium",
+    "cityId": "zelenogradsk",
+    "kind": "tower",
+    "coordinates": [
+      20.4825365,
+      54.9597881
+    ],
+    "states": {
+      "now": {
+        "name": "Водонапорная башня · Мурариум",
+        "description": "Старинная башня с музеем кошек и смотровой площадкой."
+      }
+    },
+    "sources": [
+      {
+        "title": "История и описание объекта",
+        "url": "https://visit-kaliningrad.ru/entertainment/sights/sightseeings/muzej-murarium/"
+      },
+      {
+        "title": "Координаты · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/way/133724496"
+      }
+    ]
+  },
+  {
+    "id": "zelenogradsk-museum",
+    "cityId": "zelenogradsk",
+    "kind": "museum",
+    "coordinates": [
+      20.4749496,
+      54.9593532
+    ],
+    "states": {
+      "now": {
+        "name": "Краеведческий музей",
+        "description": "Музей истории Кранца и Зеленоградска в историческом здании."
+      }
+    },
+    "sources": [
+      {
+        "title": "Координаты · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/way/226050760"
+      }
+    ]
+  },
+  {
+    "id": "rauschen-water-tower",
+    "cityId": "svetlogorsk",
+    "kind": "tower",
+    "coordinates": [
+      20.1549262,
+      54.9433817
+    ],
+    "states": {
+      "now": {
+        "name": "Водонапорная башня Раушена",
+        "description": "Башня комплекса водогрязелечебницы — один из символов Светлогорска.",
+        "date": "Строительство · 1907–1908"
+      }
+    },
+    "sources": [
+      {
+        "title": "История и описание объекта",
+        "url": "https://visit-kaliningrad.ru/entertainment/sights/gorodskie-zdaniya/zdanie-s-vodonapornoj-bashnej/"
+      },
+      {
+        "title": "Координаты · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/way/185249646"
+      }
+    ],
+    "photoCityId": "svetlogorsk"
+  },
+  {
+    "id": "zodiac-sundial",
+    "cityId": "svetlogorsk",
+    "kind": "monument",
+    "coordinates": [
+      20.1545007,
+      54.9464816
+    ],
+    "states": {
+      "now": {
+        "name": "Солнечные часы «Зодиак»",
+        "description": "Мозаичные солнечные часы на морском променаде Светлогорска."
+      }
+    },
+    "sources": [
+      {
+        "title": "Координаты · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/way/995725092"
+      }
+    ]
+  },
+  {
+    "id": "eylau-castle",
+    "cityId": "bagrationovsk",
+    "kind": "castle",
+    "coordinates": [
+      20.632833,
+      54.386651
+    ],
+    "states": {
+      "now": {
+        "name": "Форбург Прейсиш-Эйлау",
+        "description": "Сохранившаяся хозяйственная часть замка. Основной замок дошёл до нас в виде руин."
+      },
+      "kant": {
+        "name": "Замок Прейсиш-Эйлау",
+        "description": "Старый замковый комплекс у поселения Прейсиш-Эйлау."
+      },
+      "order": {
+        "name": "Замок Прейсиш-Эйлау",
+        "description": "Орденская крепость на юге современной области.",
+        "date": "Основание · 1325–1326"
+      }
+    },
+    "sources": [
+      {
+        "title": "История и описание объекта",
+        "url": "https://visit-kaliningrad.ru/blog/puteshestvie-k-yuzhnym-granitsam-bagrationovsk/"
+      },
+      {
+        "title": "Координаты · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/way/131324520"
+      }
+    ],
+    "photoCityId": "bagrationovsk"
+  },
+  {
+    "id": "bagrationovsk-museum",
+    "cityId": "bagrationovsk",
+    "kind": "museum",
+    "coordinates": [
+      20.6406611,
+      54.3873904
+    ],
+    "states": {
+      "now": {
+        "name": "Музей истории края",
+        "description": "Городской музей Багратионовска: история Прейсиш-Эйлау и окрестностей."
+      }
+    },
+    "sources": [
+      {
+        "title": "Координаты · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/way/1085593395"
+      }
+    ]
+  },
+  {
+    "id": "friedland-church",
+    "cityId": "pravdinsk",
+    "kind": "church",
+    "coordinates": [
+      21.0171833,
+      54.4471053
+    ],
+    "states": {
+      "now": {
+        "name": "Свято-Георгиевский храм",
+        "description": "Бывшая кирха Фридланда, сохранившаяся в центре Правдинска."
+      },
+      "kant": {
+        "name": "Кирха Фридланда",
+        "description": "Городской храм средневекового происхождения в центре Фридланда."
+      },
+      "order": {
+        "name": "Кирха Фридланда",
+        "description": "Кирпичная готическая церковь в средневековом городе.",
+        "date": "Начало строительства · XIV век"
+      }
+    },
+    "sources": [
+      {
+        "title": "История и описание объекта",
+        "url": "https://ru.wikipedia.org/wiki/Фридландская_кирха"
+      },
+      {
+        "title": "Координаты · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/way/117515241"
+      }
+    ],
+    "photoCityId": "pravdinsk"
+  },
+  {
+    "id": "friedland-wall",
+    "cityId": "pravdinsk",
+    "kind": "fortification",
+    "coordinates": [
+      21.0170318,
+      54.4460159
+    ],
+    "states": {
+      "now": {
+        "name": "Руины городской стены",
+        "description": "Сохранившийся фрагмент укреплений средневекового Фридланда."
+      },
+      "kant": {
+        "name": "Старая городская стена",
+        "description": "Место средневековой линии укреплений Фридланда; показано по сохранившемуся фрагменту."
+      },
+      "order": {
+        "name": "Городская стена Фридланда",
+        "description": "Городские укрепления Фридланда. Точка отмечает место сохранившегося фрагмента стены."
+      }
+    },
+    "sources": [
+      {
+        "title": "История и описание объекта",
+        "url": "https://ru.wikipedia.org/wiki/Правдинск"
+      },
+      {
+        "title": "Координаты · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/node/8618436817"
+      }
+    ]
+  },
+  {
+    "id": "tapiau-castle",
+    "cityId": "gvardeysk",
+    "kind": "castle",
+    "coordinates": [
+      21.0730955,
+      54.6449262
+    ],
+    "states": {
+      "now": {
+        "name": "Замок Тапиау",
+        "description": "Сохранившийся орденский замок на берегу реки Деймы."
+      },
+      "kant": {
+        "name": "Замок Тапиау",
+        "description": "Средневековый комплекс в городе Тапиау."
+      },
+      "order": {
+        "name": "Замок Тапиау",
+        "description": "Орденская крепость на речных путях у слияния Прегеля и Деймы.",
+        "date": "Орденский замок · XIII–XIV века"
+      }
+    },
+    "sources": [
+      {
+        "title": "История и описание объекта",
+        "url": "https://visit-kaliningrad.ru/entertainment/sights/castles/zamok-tapiau/"
+      },
+      {
+        "title": "Координаты · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/way/84818610"
+      }
+    ]
+  },
+  {
+    "id": "tapiau-church",
+    "cityId": "gvardeysk",
+    "kind": "church",
+    "coordinates": [
+      21.0700782,
+      54.6477711
+    ],
+    "states": {
+      "now": {
+        "name": "Храм Иоанна Предтечи",
+        "description": "Бывшая городская кирха на центральной площади Гвардейска."
+      },
+      "kant": {
+        "name": "Городская кирха Тапиау",
+        "description": "Храм на центральной площади города, построенный в конце XVII века."
+      }
+    },
+    "sources": [
+      {
+        "title": "История и описание объекта",
+        "url": "https://visit-kaliningrad.ru/entertainment/sights/sightseeings/tsentralnaya-ploshchad-goroda-gvardeyska/"
+      },
+      {
+        "title": "Координаты · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/way/85828721"
+      }
+    ],
+    "photoCityId": "gvardeysk"
+  },
+  {
+    "id": "ragnit-castle",
+    "cityId": "neman",
+    "kind": "castle",
+    "coordinates": [
+      22.03004,
+      55.0391236
+    ],
+    "states": {
+      "now": {
+        "name": "Замок Рагнит",
+        "description": "Руины большого кирпичного замка в центре Немана."
+      },
+      "kant": {
+        "name": "Замок Рагнит",
+        "description": "Старый орденский замок в городе Рагните."
+      },
+      "order": {
+        "name": "Замок Рагнит",
+        "description": "Монументальный каменный замок Тевтонского ордена у Немана.",
+        "date": "Каменный замок · 1397–1409"
+      }
+    },
+    "sources": [
+      {
+        "title": "История и описание объекта",
+        "url": "https://visit-kaliningrad.ru/entertainment/sights/castles/zamok-ragnit/"
+      },
+      {
+        "title": "Координаты · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/relation/1638480"
+      }
+    ],
+    "photoCityId": "neman"
+  },
+  {
+    "id": "mennonite-church",
+    "cityId": "neman",
+    "kind": "church",
+    "coordinates": [
+      22.0240784,
+      55.0421831
+    ],
+    "states": {
+      "now": {
+        "name": "Кирха меннонитов",
+        "description": "Историческое здание кирхи в Немане.",
+        "date": "Строительство · 1853"
+      }
+    },
+    "sources": [
+      {
+        "title": "Координаты · OpenStreetMap",
+        "url": "https://www.openstreetmap.org/way/119086611"
+      }
+    ]
+  }
+]

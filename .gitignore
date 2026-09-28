@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.npm-cache/
+*.tsbuildinfo
+*.log
+.env
+.env.*
+!.env.example
+Atlas Docs/media-downloads/
+atlas-app/scripts/write-app.py
+atlas-app/scripts/about-fragment.txt
+atlas-app/scripts/fetch-core-places.py
+.DS_Store
+Thumbs.db
