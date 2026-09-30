@@ -3,9 +3,10 @@ import { createPortal } from 'react-dom';
 import * as maplibre from 'maplibre-gl';
 import type { Map as LibreMap, StyleSpecification, CameraOptions } from 'maplibre-gl';
 import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
-import { Anchor, Building2, Castle, Church, Compass, Info, Landmark, MapPin, Maximize, Minus, Plus, Shield, Waves } from 'lucide-react';
-import { getVisibleCities, type City, type EraId, type MarkerStyle } from './data';
-import { getCityPlaces, type AtlasPlace } from './places';
+import { Anchor, Building2, Castle, Church, Compass, Info, Landmark, MapPin, Maximize, Minus, Plus, Waves } from 'lucide-react';
+import type { City, EraId } from './data';
+import type { AtlasPlace } from './places';
+import { getCityPoints, getLayerPoints, settlements, type AtlasSettlement, type LayerId, type ThematicPlace } from './themes';
 import { publicUrl } from './urls';
 
 maplibre.setWorkerUrl(workerUrl);
@@ -13,7 +14,7 @@ export type Media = { cityId: string; kind: string; filename: string; sourceUrl:
 export type Assets = Record<string, { photo?: Media; coat?: Media }>;
 export const assetUrl = (asset?: Media) => asset ? publicUrl(`media/${asset.filename}`) : undefined;
 export function PlaceIcon({ place, size = 24 }: { place: AtlasPlace; size?: number }) {
-  const Icon = place.kind === 'castle' ? Castle : place.kind === 'church' ? Church : place.kind === 'bridge' ? Waves : place.kind === 'quarter' ? Building2 : Landmark;
+  const Icon = place.kind === 'castle' ? Castle : place.kind === 'church' ? Church : place.kind === 'bridge' ? Waves : place.kind === 'quarter' ? Building2 : place.kind === 'battlefield' ? Compass : place.kind === 'route' ? MapPin : place.kind === 'story' ? Info : Landmark;
   return <Icon size={size} strokeWidth={1.5} />;
 }
 export function CityIcon({ city, era, size = 20 }: { city: City; era: EraId; size?: number }) {
@@ -21,47 +22,61 @@ export function CityIcon({ city, era, size = 20 }: { city: City; era: EraId; siz
   return <Icon size={size} strokeWidth={1.5} />;
 }
 const regionBounds: [[number, number], [number, number]] = [[19.55, 54.30], [22.93, 55.30]];
-const offsets: Record<string, [number, number]> = { sovetsk: [-25, -10], neman: [24, 28], zelenogradsk: [16, -8], svetlogorsk: [-20, -12] };
-const mobileOffsets: Record<string, [number, number]> = { ...offsets, kaliningrad: [-6, -5], chernyakhovsk: [0, -10], gusev: [0, 25], baltiysk: [0, 15], zelenogradsk: [22, 8], svetlogorsk: [-20, -20], bagrationovsk: [0, 40], pravdinsk: [18, 6], gvardeysk: [0, 12] };
-
-function CityMarker({ city, era, style, assets, narrow, select }: { city: City; era: EraId; style: MarkerStyle; assets: Assets; narrow: boolean; select: (id: string) => void }) {
-  const [dx, dy] = style === 'compact' ? [0, 0] : (narrow ? mobileOffsets : offsets)[city.id] || [0, 0];
-  const data = assets[city.id];
-  return <>
-    {(dx || dy) ? <svg className="marker-leader" aria-hidden="true"><line x1="0" y1="0" x2={dx} y2={dy} /><circle cx="0" cy="0" r="2.5" /></svg> : null}
-    <button className={`atlas-marker ${style} ${era !== 'now' ? 'historical' : ''}`} style={{ left: dx, top: dy }} onClick={() => select(city.id)} aria-label={`Открыть карту: ${city.states[era].name}`} data-city={city.id}>
-      {era === 'now' ? <span className="marker-picture">
-        {style === 'coat' ? (data?.coat ? <img className="main-coat" src={assetUrl(data.coat)} alt="" /> : <Shield />) : (data?.photo ? <img className="city-photo" src={assetUrl(data.photo)} alt="" /> : <MapPin />)}
-        {style !== 'coat' && data?.coat ? <span className="coat-badge"><img src={assetUrl(data.coat)} alt="" /></span> : null}
-      </span> : <span className="marker-picture era-symbol"><CityIcon city={city} era={era} size={25} /></span>}
-      <span className="marker-name">{city.states[era].name}</span>
-    </button>
-  </>;
+type MapItem = { id: string; coordinates: [number, number]; city?: AtlasSettlement; place?: ThematicPlace };
+function markerOffsets(items: MapItem[]): Map<string, [number, number]> {
+  const groups = new Map<string, MapItem[]>();
+  for (const item of items) {
+    if (!item.place) continue;
+    const key = item.place.mapPrecision === 'anchor'
+      ? `anchor:${item.place.cityId}`
+      : `point:${item.coordinates[0].toFixed(5)}:${item.coordinates[1].toFixed(5)}`;
+    groups.set(key, [...(groups.get(key) || []), item]);
+  }
+  const offsets = new Map<string, [number, number]>();
+  for (const group of groups.values()) group.forEach((item, index) => {
+    if (group.length === 1) { offsets.set(item.id, [0, 0]); return; }
+    const ring = Math.floor(index / 8);
+    const count = Math.min(8, group.length - ring * 8);
+    const angle = (index % 8) * 2 * Math.PI / count - Math.PI / 2;
+    const radius = 19 + ring * 17;
+    offsets.set(item.id, [Math.round(Math.cos(angle) * radius), Math.round(Math.sin(angle) * radius)]);
+  });
+  return offsets;
 }
 
-function ObjectMarker({ place, era, assets, active, select }: { place: AtlasPlace; era: EraId; assets: Assets; active: boolean; select: (id: string) => void }) {
-  const photo = era === 'now' && place.photoCityId ? assets[place.photoCityId]?.photo : undefined;
-  return <button className={`atlas-marker photo object-marker ${active ? 'active' : ''} ${era !== 'now' ? 'historical' : ''}`} onClick={() => select(place.id)} aria-label={`Открыть объект: ${place.states[era]?.name}`} aria-pressed={active} data-place={place.id}>
-    <span className="marker-picture era-symbol">{photo ? <img className="city-photo" src={assetUrl(photo)} alt="" /> : <PlaceIcon place={place} size={26} />}</span>
-    <span className="marker-name">{place.states[era]?.name}</span>
+function CityMarker({ city, assets, select }: { city: AtlasSettlement; assets: Assets; select: (id: string) => void }) {
+  const data = assets[city.id];
+  return <button className="atlas-marker photo region-point settlement-point" onClick={() => select(city.id)} aria-label={`Открыть карту: ${city.name}`} data-city={city.id}>
+      <span className="marker-picture">
+        <img className="city-photo" src={assetUrl(data?.photo) || publicUrl('media/place-preview.svg')} alt="" />
+      </span>
+      <span className="marker-name">{city.name}</span>
+    </button>;
+}
+
+function ObjectMarker({ place, assets, active, regionView, offset, select }: { place: ThematicPlace; assets: Assets; active: boolean; regionView: boolean; offset: [number, number]; select: (id: string) => void }) {
+  const photo = place.photoCityId ? assets[place.photoCityId]?.photo : assets[place.cityId]?.photo;
+  const compact = regionView || place.mapPrecision === 'anchor';
+  return <button className={`atlas-marker photo object-marker theme-${place.layer} ${compact ? 'map-dot' : ''} ${place.mapPrecision === 'anchor' ? 'approximate' : ''} ${active ? 'active' : ''}`} style={{ left: offset[0], top: offset[1] }} onClick={() => select(place.id)} aria-label={`Открыть объект: ${place.states.now?.name}${place.mapPrecision === 'anchor' ? ', ориентир' : ''}`} aria-pressed={active} data-place={place.id}>
+    <span className="marker-picture era-symbol"><img className="city-photo" src={assetUrl(photo) || publicUrl('media/place-preview.svg')} alt="" /></span>
+    <span className="marker-name">{place.states.now?.name}{place.mapPrecision === 'anchor' ? ' · ориентир' : ''}</span>
   </button>;
 }
 
-type Props = { era: EraId; style: MarkerStyle; city?: City; placeId: string | null; assets: Assets; selectCity: (id: string) => void; selectPlace: (id: string) => void; mapRef: RefObject<LibreMap | null> };
-export default function AtlasMap({ era, style, city, placeId, assets, selectCity, selectPlace, mapRef }: Props) {
+type Props = { layer: LayerId; city?: AtlasSettlement; placeId: string | null; assets: Assets; selectCity: (id: string) => void; selectPlace: (id: string) => void; mapRef: RefObject<LibreMap | null> };
+export default function AtlasMap({ layer, city, placeId, assets, selectCity, selectPlace, mapRef }: Props) {
   const container = useRef<HTMLDivElement>(null);
   const [map, setMap] = useState<LibreMap | null>(null);
-  const [slots, setSlots] = useState<{ id: string; element: HTMLDivElement; city?: City; place?: AtlasPlace }[]>([]);
+  const [slots, setSlots] = useState<{ id: string; element: HTMLDivElement; city?: AtlasSettlement; place?: ThematicPlace; offset: [number, number] }[]>([]);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(true);
-  const [narrow, setNarrow] = useState(window.innerWidth < 760);
   const region = useRef<any>(null);
   const base = useRef<StyleSpecification | null>(null);
   const fallback = useRef<StyleSpecification | null>(null);
   const regionCamera = useRef<(CameraOptions & { padding: maplibre.PaddingOptions }) | null>(null);
   const previousCity = useRef<string | null>(null);
-  const current = useRef({ era, city });
-  current.current = { era, city };
+  const current = useRef({ city });
+  current.current = { city };
   const duration = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 700;
   const frame = useCallback((animate = true) => {
     const instance = mapRef.current;
@@ -69,7 +84,7 @@ export default function AtlasMap({ era, style, city, placeId, assets, selectCity
     const activeCity = current.current.city;
     const padding = { top: activeCity ? 155 : 110, bottom: window.innerWidth < 760 ? 140 : 150, left: window.innerWidth < 760 ? 50 : 70, right: window.innerWidth < 760 ? 50 : 70 };
     if (!activeCity) { instance.fitBounds(regionBounds, { padding, duration: animate ? duration() : 0 }); return; }
-    const objects = getCityPlaces(activeCity.id, current.current.era);
+    const objects = getCityPoints(activeCity.id);
     if (objects.length <= 1) { instance.flyTo({ center: objects[0]?.coordinates || activeCity.coordinates, zoom: 14, padding, duration: animate ? duration() : 0 }); return; }
     const bounds = new maplibre.LngLatBounds();
     objects.forEach(place => bounds.extend(place.coordinates));
@@ -111,7 +126,7 @@ export default function AtlasMap({ era, style, city, placeId, assets, selectCity
           if (!disposed && ++errors >= 3 && base.current) { base.current = null; instance?.setStyle(fallback.current!); setLoading(false); setError('Подложка недоступна. Координаты мест остаются на карте.'); }
         });
         const result = await fetch(publicUrl('data/basemap.json'), { signal: controller.signal });
-        if (result.ok) { base.current = await result.json(); if (!disposed) instance.setStyle(makeStyle(base.current!, region.current, current.current.era, !!current.current.city)); }
+        if (result.ok) { base.current = await result.json(); if (!disposed) instance.setStyle(makeStyle(base.current!, region.current, 'now', !!current.current.city)); }
       } catch (err) {
         if (!disposed && !(err instanceof DOMException && err.name === 'AbortError')) { setLoading(false); setError('Не удалось открыть карту. Места доступны в списке.'); }
       }
@@ -122,12 +137,13 @@ export default function AtlasMap({ era, style, city, placeId, assets, selectCity
 
   useEffect(() => {
     if (!map) return;
-    const items: { id: string; coordinates: [number, number]; city?: City; place?: AtlasPlace }[] = city ? getCityPlaces(city.id, era).map(place => ({ id: place.id, coordinates: place.coordinates, place })) : getVisibleCities(era).map(item => ({ id: item.id, coordinates: item.states[era].coordinates || item.coordinates, city: item }));
-    const markers = items.map(item => { const element = document.createElement('div'); element.className = 'marker-anchor'; const marker = new maplibre.Marker({ element, anchor: 'center' }).setLngLat(item.coordinates).addTo(map); return { ...item, element, marker }; });
+    const items: MapItem[] = city ? getCityPoints(city.id).map(place => ({ id: place.id, coordinates: place.coordinates, place })) : layer === 'places' ? settlements.map(item => ({ id: item.id, coordinates: item.coordinates, city: item })) : getLayerPoints(layer).map(place => ({ id: place.id, coordinates: place.coordinates, place }));
+    const offsets = markerOffsets(items);
+    const markers = items.map(item => { const element = document.createElement('div'); element.className = 'marker-anchor'; const marker = new maplibre.Marker({ element, anchor: 'center' }).setLngLat(item.coordinates).addTo(map); return { ...item, element, offset: offsets.get(item.id) || [0, 0] as [number, number], marker }; });
     setSlots(markers);
-    if (base.current) map.setStyle(makeStyle(base.current, region.current, era, !!city));
+    if (base.current) map.setStyle(makeStyle(base.current, region.current, 'now', !!city));
     return () => markers.forEach(item => item.marker.remove());
-  }, [map, era, city]);
+  }, [map, layer, city]);
 
   useEffect(() => {
     if (!map) return;
@@ -142,7 +158,7 @@ export default function AtlasMap({ era, style, city, placeId, assets, selectCity
 
   useEffect(() => {
     const media = window.matchMedia('(max-width: 759px)');
-    const update = () => setNarrow(media.matches);
+    const update = () => map?.resize();
     media.addEventListener('change', update);
     const observer = new ResizeObserver(() => map?.resize());
     if (container.current) observer.observe(container.current);
@@ -150,8 +166,8 @@ export default function AtlasMap({ era, style, city, placeId, assets, selectCity
   }, [map]);
 
   return <>
-    <div ref={container} className="map-canvas" aria-label={city ? `Карта города: ${city.states[era].name}` : 'Интерактивная карта Калининградской области'} />
-    {slots.map(slot => createPortal(slot.place ? <ObjectMarker place={slot.place} era={era} assets={assets} active={placeId === slot.id} select={selectPlace} /> : <CityMarker city={slot.city!} era={era} style={style} assets={assets} narrow={narrow} select={selectCity} />, slot.element, slot.id))}
+    <div ref={container} className="map-canvas" aria-label={city ? `Карта города: ${city.name}` : 'Интерактивная карта Калининградской области'} />
+    {slots.map(slot => createPortal(slot.place ? <ObjectMarker place={slot.place} assets={assets} active={placeId === slot.id} regionView={!city} offset={slot.offset} select={selectPlace} /> : <CityMarker city={slot.city!} assets={assets} select={selectCity} />, slot.element, slot.id))}
     {loading && <div className="map-message" role="status">Открываем карту…</div>}
     {error && <div className="map-message error" role="status"><Info size={16} />{error}</div>}
     <div className="map-controls"><button aria-label="Приблизить карту" onClick={() => map?.zoomIn()}><Plus size={20}/></button><button aria-label="Отдалить карту" onClick={() => map?.zoomOut()}><Minus size={20}/></button><span/><button aria-label={city ? 'Показать все объекты города' : 'Показать всю область'} onClick={() => frame()}><Maximize size={18}/></button></div>

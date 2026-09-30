@@ -1,0 +1,1330 @@
+{
+  "settlements": [
+    {
+      "id": "kaliningrad",
+      "name": "Калининград",
+      "historicalName": "Königsberg",
+      "coordinates": [
+        20.4522,
+        54.7104
+      ],
+      "description": "Главный городской слой: средневековый Кёнигсберг, университет, Кант, война 1945, послевоенная память, современный фольклор",
+      "tags": "city, architecture, literature, ww2, folklore",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    },
+    {
+      "id": "sovetsk",
+      "name": "Советск",
+      "historicalName": "Tilsit",
+      "coordinates": [
+        21.8885,
+        55.0806
+      ],
+      "description": "Неман, Тильзитский мир, городская архитектура, мост королевы Луизы, Иоганнес Бобровский",
+      "tags": "city, napoleonic, literature, architecture",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    },
+    {
+      "id": "chernyakhovsk",
+      "name": "Черняховск",
+      "historicalName": "Insterburg",
+      "coordinates": [
+        21.8195,
+        54.6306
+      ],
+      "description": "Замок Инстербург, городской ансамбль, военная история, Барклай-де-Толли, локальные легенды",
+      "tags": "city, castle, architecture, military, folklore",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    },
+    {
+      "id": "gusev",
+      "name": "Гусев",
+      "historicalName": "Gumbinnen",
+      "coordinates": [
+        22.1999,
+        54.5916
+      ],
+      "description": "Центральный российский узел памяти Первой мировой; Гумбинненское сражение; события января 1945",
+      "tags": "city, ww1, ww2, memorial",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    },
+    {
+      "id": "baltiysk",
+      "name": "Балтийск",
+      "historicalName": "Pillau",
+      "coordinates": [
+        19.9146,
+        54.6514
+      ],
+      "description": "Порт, цитадель, морская история, штурм Пиллау 1945, Балтийская коса",
+      "tags": "city, port, fortification, ww2",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    },
+    {
+      "id": "zelenogradsk",
+      "name": "Зеленоградск",
+      "historicalName": "Cranz",
+      "coordinates": [
+        20.475,
+        54.96
+      ],
+      "description": "Курортная история Самбии, начало маршрутов на Куршскую косу, современная культурная идентичность",
+      "tags": "city, resort, coast, literature",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    },
+    {
+      "id": "svetlogorsk",
+      "name": "Светлогорск",
+      "historicalName": "Rauschen",
+      "coordinates": [
+        20.1512,
+        54.9439
+      ],
+      "description": "Курортный ландшафт, немецкая и советская архитектура, литературная память, апрель 1945",
+      "tags": "city, resort, literature, ww2",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    },
+    {
+      "id": "bagrationovsk",
+      "name": "Багратионовск",
+      "historicalName": "Preußisch Eylau",
+      "coordinates": [
+        20.638,
+        54.3871
+      ],
+      "description": "Поле сражения 1807 года, музей, замковый форбург, Хайльсбергский укрепрайон 1945",
+      "tags": "city, napoleonic, ww2, castle",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    },
+    {
+      "id": "pravdinsk",
+      "name": "Правдинск",
+      "historicalName": "Friedland",
+      "coordinates": [
+        21.0087,
+        54.4439
+      ],
+      "description": "Фридландское сражение 1807, средневековый городской центр и кирха",
+      "tags": "city, napoleonic, architecture",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    },
+    {
+      "id": "gvardeysk",
+      "name": "Гвардейск",
+      "historicalName": "Tapiau",
+      "coordinates": [
+        21.0651,
+        54.6477
+      ],
+      "description": "Замок Тапиау, городской ансамбль, узел Преголи",
+      "tags": "city, castle, architecture",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    },
+    {
+      "id": "neman",
+      "name": "Неман",
+      "historicalName": "Ragnit",
+      "coordinates": [
+        22.0263,
+        55.0313
+      ],
+      "description": "Руины замка Рагнит, Неман, приграничная история",
+      "tags": "city, castle, river",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    },
+    {
+      "id": "guryevsk",
+      "name": "Гурьевск",
+      "historicalName": "Neuhausen",
+      "coordinates": [
+        20.6052,
+        54.7732
+      ],
+      "description": "Ближний исторический пояс Кёнигсберга, замок Нойхаузен и послевоенная агломерация",
+      "tags": "city, castle, kaliningrad_belt",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    },
+    {
+      "id": "polessk",
+      "name": "Полесск",
+      "historicalName": "Labiau",
+      "coordinates": [
+        21.1078,
+        54.8623
+      ],
+      "description": "Замок Лабиау, Дейма, водные маршруты и сельская история низовьев",
+      "tags": "town, castle, water, tourism",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    },
+    {
+      "id": "ozersk",
+      "name": "Озёрск",
+      "historicalName": "Darkehmen / Angerapp",
+      "coordinates": [
+        22.011,
+        54.4106
+      ],
+      "description": "Компактный исторический центр, гидроэнергетика XIX века, юго-восток области",
+      "tags": "town, architecture, industrial_heritage",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    },
+    {
+      "id": "krasnoznamensk",
+      "name": "Краснознаменск",
+      "historicalName": "Lasdehnen / Haselberg",
+      "coordinates": [
+        22.489,
+        54.942
+      ],
+      "description": "Восточный городской узел, Шешупе, мало представленный в нынешнем прототипе слой региона",
+      "tags": "town, river, regional_balance",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    },
+    {
+      "id": "mamonovo",
+      "name": "Мамоново",
+      "historicalName": "Heiligenbeil",
+      "coordinates": [
+        19.9382,
+        54.4643
+      ],
+      "description": "Средневековая городская структура, юго-запад области, бои 1945 и «Хайлигенбайльский котёл»",
+      "tags": "town, medieval, ww2",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    },
+    {
+      "id": "pionersky",
+      "name": "Пионерский",
+      "historicalName": "Neukuhren",
+      "coordinates": [
+        20.224,
+        54.9506
+      ],
+      "description": "Курортно-рыбацкая история побережья, музей «Рантава», события апреля 1945",
+      "tags": "town, coast, archaeology, ww2",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    },
+    {
+      "id": "primorsk",
+      "name": "Приморск",
+      "historicalName": "Fischhausen",
+      "coordinates": [
+        19.9984,
+        54.7315
+      ],
+      "description": "История Самбии, Фишхаузен, близость Лохштедта и Пиллау, апрель 1945",
+      "tags": "town, sambia, ww2, castle_context",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    },
+    {
+      "id": "svetly",
+      "name": "Светлый",
+      "historicalName": "Zimmerbude",
+      "coordinates": [
+        20.1347,
+        54.675
+      ],
+      "description": "Вислинский/Калининградский залив, индустриально-портовая история, послевоенная трансформация",
+      "tags": "town, port, industrial_heritage",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    },
+    {
+      "id": "slavsk",
+      "name": "Славск",
+      "historicalName": "Heinrichswalde",
+      "coordinates": [
+        21.68,
+        55.045
+      ],
+      "description": "Низменность, мелиорация, архитектура сельской Восточной Пруссии",
+      "tags": "town, landscape, rural_history",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    },
+    {
+      "id": "nesterov",
+      "name": "Нестеров",
+      "historicalName": "Stallupönen / Ebenrode",
+      "coordinates": [
+        22.571,
+        54.63
+      ],
+      "description": "Первое крупное столкновение русской армии в Восточной Пруссии в августе 1914; восточные ворота региона",
+      "tags": "town, ww1, railway",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    },
+    {
+      "id": "yantarny",
+      "name": "Янтарный",
+      "historicalName": "Palmnicken",
+      "coordinates": [
+        19.9406,
+        54.8715
+      ],
+      "description": "Янтарная промышленность, Балтийское побережье, легенды об янтаре, история Второй мировой и Холокоста",
+      "tags": "settlement, amber, coast, memory",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    },
+    {
+      "id": "zheleznodorozhny",
+      "name": "Железнодорожный",
+      "historicalName": "Gerdauen",
+      "coordinates": [
+        21.3065,
+        54.359
+      ],
+      "description": "Один из наиболее выразительных малых исторических центров; средневековая структура и следы Первой мировой",
+      "tags": "settlement, architecture, ww1, tourism",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    },
+    {
+      "id": "znamensk",
+      "name": "Знаменск",
+      "historicalName": "Wehlau",
+      "coordinates": [
+        21.2249,
+        54.6146
+      ],
+      "description": "Велау на Преголе; исторический транспортный узел; место подготовки макета штурма Кёнигсберга в 1945",
+      "tags": "settlement, river, ww2, literature",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    },
+    {
+      "id": "rybachy",
+      "name": "Рыбачий",
+      "historicalName": "Rossitten",
+      "coordinates": [
+        20.8533,
+        55.1558
+      ],
+      "description": "Главный фольклорно-литературный узел Куршской косы; Росситтенский замок, Гофман, легенды",
+      "tags": "settlement, curonian_spit, folklore, literature",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    },
+    {
+      "id": "krasnolesye",
+      "name": "Краснолесье",
+      "historicalName": "Rominter Heide context",
+      "coordinates": [
+        22.427,
+        54.954
+      ],
+      "description": "Роминтенская пуща/Виштынецкая возвышенность, природно-культурные маршруты и мосты старой инфраструктуры",
+      "tags": "settlement, nature, industrial_heritage, tourism",
+      "geoStatus": "rough_anchor",
+      "document": "01_significant_places.md"
+    }
+  ],
+  "records": [
+    {
+      "id": "syw_gross_jagersdorf_field",
+      "cityId": "chernyakhovsk",
+      "layer": "russian",
+      "name": "Поле сражения при Гросс-Егерсдорфе, юго-западнее Междуречья",
+      "description": "Сражение русской армии С. Ф. Апраксина с прусскими войсками; исторический Гросс-Егерсдорф не существует",
+      "period": "19(30).08.1757",
+      "kind": "battlefield",
+      "locationHint": "ориентир района: 54.6242, 21.5214; нужен полигон по историческим картам",
+      "geoStatus": "area_required",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        21.5214,
+        54.6242
+      ],
+      "document": "02_russian_army_battlefields.md"
+    },
+    {
+      "id": "syw_gross_jagersdorf_memorial",
+      "cityId": "chernyakhovsk",
+      "layer": "russian",
+      "name": "Мемориал на поле Гросс-Егерсдорфа",
+      "description": "Точка интерпретации рядом с центром сражения и местом захоронений; ведёт к полю боя",
+      "period": "современный мемориал; обновлён 30.08.2017",
+      "kind": "memorial",
+      "locationHint": "дорога Междуречье—Светаевка, точка требует точного GPS",
+      "geoStatus": "needs_georef",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        21.8195,
+        54.6306
+      ],
+      "document": "02_russian_army_battlefields.md"
+    },
+    {
+      "id": "syw_chernyakhovsk_plaque",
+      "cityId": "chernyakhovsk",
+      "layer": "russian",
+      "name": "Памятная доска Гросс-Егерсдорфа, Черняховск",
+      "description": "Городская памятная точка, не место боя",
+      "period": "2007",
+      "kind": "memorial",
+      "locationHint": "Черняховск, ул. Ленина, 22",
+      "geoStatus": "ready_point",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        21.8195,
+        54.6306
+      ],
+      "document": "02_russian_army_battlefields.md"
+    },
+    {
+      "id": "nap_preussisch_eylau_field",
+      "cityId": "bagrationovsk",
+      "layer": "russian",
+      "name": "Поле сражения при Прейсиш-Эйлау",
+      "description": "Сражение русско-прусских сил с армией Наполеона; поле лежит вокруг современного Багратионовска",
+      "period": "07–08.02.1807",
+      "kind": "battlefield",
+      "locationHint": "нужен полигон; отдельный доступный участок — Креговские высоты примерно в 3 км от города",
+      "geoStatus": "area_required",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        20.638,
+        54.3871
+      ],
+      "document": "02_russian_army_battlefields.md"
+    },
+    {
+      "id": "nap_kregovskie_heights",
+      "cityId": "bagrationovsk",
+      "layer": "russian",
+      "name": "Креговские высоты / знак «Русскому воинству»",
+      "description": "Доступная точка на части исторического поля",
+      "period": "1807 / современная памятная точка",
+      "kind": "battlefield_anchor + memorial",
+      "locationHint": "район Багратионовска, приграничная зона; точный GPS проверить",
+      "geoStatus": "needs_georef",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        20.638,
+        54.3871
+      ],
+      "document": "02_russian_army_battlefields.md"
+    },
+    {
+      "id": "nap_three_generals",
+      "cityId": "bagrationovsk",
+      "layer": "russian",
+      "name": "Памятник сражению при Прейсиш-Эйлау («Три генерала»)",
+      "description": "Один из главных сохранившихся мемориальных объектов события",
+      "period": "1856",
+      "kind": "memorial",
+      "locationHint": "Багратионовск, ул. Дружбы",
+      "geoStatus": "ready_point",
+      "mapPrecision": "point",
+      "coordinates": [
+        20.6423976,
+        54.3840218
+      ],
+      "document": "02_russian_army_battlefields.md"
+    },
+    {
+      "id": "nap_bagrationovsk_museum",
+      "cityId": "bagrationovsk",
+      "layer": "russian",
+      "name": "Багратионовский музей истории края",
+      "description": "Находки с поля боя, карты, гравюры, ежегодная научная конференция по Эйлау 1807",
+      "period": "музей",
+      "kind": "museum",
+      "locationHint": "54.3873904, 20.6406611; ул. Калининградская, 10",
+      "geoStatus": "ready_point",
+      "mapPrecision": "point",
+      "coordinates": [
+        20.6406611,
+        54.3873904
+      ],
+      "document": "02_russian_army_battlefields.md"
+    },
+    {
+      "id": "nap_friedland_field",
+      "cityId": "pravdinsk",
+      "layer": "russian",
+      "name": "Поле Фридландского сражения",
+      "description": "Сражение русской армии с армией Наполеона у Фридланда",
+      "period": "02(14).06.1807",
+      "kind": "battlefield",
+      "locationHint": "район Правдинска; требуется исторический полигон",
+      "geoStatus": "area_required",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        21.0087,
+        54.4439
+      ],
+      "document": "02_russian_army_battlefields.md"
+    },
+    {
+      "id": "nap_mazovsky_grave",
+      "cityId": "pravdinsk",
+      "layer": "russian",
+      "name": "Могила генерала Н. М. Мазовского",
+      "description": "Памятное место русского генерала, связанное с Фридландским сражением",
+      "period": "1807 / мемориал",
+      "kind": "memorial",
+      "locationHint": "городской парк Правдинска; GPS проверить",
+      "geoStatus": "needs_georef",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        21.0087,
+        54.4439
+      ],
+      "document": "02_russian_army_battlefields.md"
+    },
+    {
+      "id": "nap_friedland_hospital",
+      "cityId": "pravdinsk",
+      "layer": "russian",
+      "name": "Здание/место госпиталя и память о русских солдатах",
+      "description": "Памятная доска на здании госпиталя; у стен хоронили умерших от ран русских воинов",
+      "period": "1807",
+      "kind": "memorial_site",
+      "locationHint": "Правдинск; нужен точный адрес/GPS",
+      "geoStatus": "needs_georef",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        21.0087,
+        54.4439
+      ],
+      "document": "02_russian_army_battlefields.md"
+    },
+    {
+      "id": "ww1_stalluponen_field",
+      "cityId": "nesterov",
+      "layer": "russian",
+      "name": "Район боя у Шталлупёнена",
+      "description": "Первый бой наступления 1-й русской армии в Восточной Пруссии; Шталлупёнен — современный Нестеров",
+      "period": "17.08.1914",
+      "kind": "battlefield",
+      "locationHint": "городской якорь 54.6300, 22.5710; нужен полигон по схеме боя",
+      "geoStatus": "area_required",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        22.571,
+        54.63
+      ],
+      "document": "02_russian_army_battlefields.md"
+    },
+    {
+      "id": "ww1_gumbinnen_goldap_field",
+      "cityId": "gusev",
+      "layer": "russian",
+      "name": "Гумбиннен-Гольдапское сражение",
+      "description": "Крупное сражение 1-й русской армии с германской 8-й армией; российский официальный портал фиксирует победу русских войск",
+      "period": "20.08.1914",
+      "kind": "battlefield",
+      "locationHint": "район Гусева и далее к югу; часть поля уходит к современной польской границе; нужен полигон",
+      "geoStatus": "area_required",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        22.1999,
+        54.5916
+      ],
+      "document": "02_russian_army_battlefields.md"
+    },
+    {
+      "id": "ww1_bayonet_attack",
+      "cityId": "gusev",
+      "layer": "russian",
+      "name": "Памятник «Штыковая атака»",
+      "description": "Памятник павшим в Гумбинненском сражении",
+      "period": "2014",
+      "kind": "memorial",
+      "locationHint": "Гусев, ул. Зои Космодемьянской",
+      "geoStatus": "ready_point",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        22.1999,
+        54.5916
+      ],
+      "document": "02_russian_army_battlefields.md"
+    },
+    {
+      "id": "ww1_all_saints",
+      "cityId": "gusev",
+      "layer": "russian",
+      "name": "Храм-памятник Всех Святых",
+      "description": "Центральный объект мемориального комплекса Первой мировой",
+      "period": "2016",
+      "kind": "memorial",
+      "locationHint": "Гусев, пр-т Ленина, 42Б",
+      "geoStatus": "ready_point",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        22.1999,
+        54.5916
+      ],
+      "document": "02_russian_army_battlefields.md"
+    },
+    {
+      "id": "ww1_forgotten_war",
+      "cityId": "gusev",
+      "layer": "russian",
+      "name": "«Памяти забытой войны, изменившей ход истории»",
+      "description": "Современный мемориальный парк и информационные стенды о Первой мировой",
+      "period": "2014",
+      "kind": "memorial",
+      "locationHint": "территория «Технополис GS», Гусевский округ",
+      "geoStatus": "ready_point",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        22.1999,
+        54.5916
+      ],
+      "document": "02_russian_army_battlefields.md"
+    },
+    {
+      "id": "ww2_konigsberg_assault_area",
+      "cityId": "kaliningrad",
+      "layer": "ww2",
+      "name": "Кёнигсберг: пространство штурма",
+      "description": "Общегородской слой: направления наступления, форты, переправы через Прегель, замыкание окружения",
+      "period": "06–09.04.1945",
+      "kind": "battle_area",
+      "locationHint": "не одна точка; нужен набор линий/полигонов",
+      "geoStatus": "area_required",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        20.4522,
+        54.7104
+      ],
+      "document": "03_great_patriotic_war_places.md"
+    },
+    {
+      "id": "ww2_fort5",
+      "cityId": "kaliningrad",
+      "layer": "ww2",
+      "name": "Форт №5",
+      "description": "Прикрывал дорогу Кёнигсберг—Раушен; взят 8 апреля после многочасового боя",
+      "period": "08.04.1945",
+      "kind": "battle_site + museum",
+      "locationHint": "Калининград, форт №5; точный GPS взять из текущего картографического слоя",
+      "geoStatus": "ready_point",
+      "mapPrecision": "point",
+      "coordinates": [
+        20.444718,
+        54.7526979
+      ],
+      "document": "03_great_patriotic_war_places.md"
+    },
+    {
+      "id": "ww2_bunker",
+      "cityId": "kaliningrad",
+      "layer": "ww2",
+      "name": "Бункер штаба гарнизона",
+      "description": "Здесь комендант Отто Ляш в присутствии советских парламентёров принял решение о капитуляции",
+      "period": "09.04.1945",
+      "kind": "command_site + museum",
+      "locationHint": "Калининград, ул. Университетская, 2А",
+      "geoStatus": "ready_point",
+      "mapPrecision": "point",
+      "coordinates": [
+        20.5096902,
+        54.7131417
+      ],
+      "document": "03_great_patriotic_war_places.md"
+    },
+    {
+      "id": "ww2_pregel_crossing",
+      "cityId": "kaliningrad",
+      "layer": "ww2",
+      "name": "Переправы через Прегель",
+      "description": "В ходе штурма советские части форсировали Прегель; важный элемент соединения северной и южной группировок",
+      "period": "07–08.04.1945",
+      "kind": "battle_area",
+      "locationHint": "требуется выделить документированные участки переправ",
+      "geoStatus": "needs_georef",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        20.4522,
+        54.7104
+      ],
+      "document": "03_great_patriotic_war_places.md"
+    },
+    {
+      "id": "ww2_amalienau_linkup",
+      "cityId": "kaliningrad",
+      "layer": "ww2",
+      "name": "Район Амалиенау / современной ул. Кутузова",
+      "description": "Соединение советских частей завершило окружение гарнизона Кёнигсберга",
+      "period": "08.04.1945",
+      "kind": "battle_area",
+      "locationHint": "район, не точка; нужен полигон по источникам",
+      "geoStatus": "needs_georef",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        20.4522,
+        54.7104
+      ],
+      "document": "03_great_patriotic_war_places.md"
+    },
+    {
+      "id": "ww2_1200_guardsmen",
+      "cityId": "kaliningrad",
+      "layer": "ww2",
+      "name": "Мемориал 1200 гвардейцам",
+      "description": "Братская могила воинов 11-й гвардейской армии, погибших при штурме Кёнигсберга",
+      "period": "1945 / мемориал",
+      "kind": "memorial",
+      "locationHint": "Калининград, Гвардейский проспект",
+      "geoStatus": "ready_point",
+      "mapPrecision": "point",
+      "coordinates": [
+        20.4902324,
+        54.7112029
+      ],
+      "document": "03_great_patriotic_war_places.md"
+    },
+    {
+      "id": "ww2_gumbinnen_capture",
+      "cityId": "gusev",
+      "layer": "ww2",
+      "name": "Бои за Гумбиннен",
+      "description": "Двухдневные уличные бои; город занят советскими войсками 21 января",
+      "period": "19–21.01.1945",
+      "kind": "battle_area",
+      "locationHint": "Гусев; нужен городской полигон/маршрут",
+      "geoStatus": "area_required",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        22.1999,
+        54.5916
+      ],
+      "document": "03_great_patriotic_war_places.md"
+    },
+    {
+      "id": "ww2_gusev_memorial",
+      "cityId": "gusev",
+      "layer": "ww2",
+      "name": "Памятник С. И. Гусеву / связанный боевой контекст",
+      "description": "Связан с боями на подступах к Гумбиннену и именем, которое получил город",
+      "period": "январь 1945 / мемориал",
+      "kind": "memorial",
+      "locationHint": "Гусев, ул. Зои Космодемьянской, 2",
+      "geoStatus": "ready_point",
+      "mapPrecision": "point",
+      "coordinates": [
+        22.1995219,
+        54.5905876
+      ],
+      "document": "03_great_patriotic_war_places.md"
+    },
+    {
+      "id": "ww2_insterburg",
+      "cityId": "chernyakhovsk",
+      "layer": "ww2",
+      "name": "Бои за Инстербург",
+      "description": "Штурм города; вокзал и часть городской инфраструктуры сильно пострадали",
+      "period": "январь 1945",
+      "kind": "battle_area",
+      "locationHint": "Черняховск; точные боевые участки требуют отдельной реконструкции",
+      "geoStatus": "research",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        21.8195,
+        54.6306
+      ],
+      "document": "03_great_patriotic_war_places.md"
+    },
+    {
+      "id": "ww2_rauschen",
+      "cityId": "svetlogorsk",
+      "layer": "ww2",
+      "name": "Взятие Раушена",
+      "description": "В городе существует мемориальный комплекс на братской могиле советских воинов, погибших при взятии Раушена",
+      "period": "14.04.1945",
+      "kind": "battle_event + memorial",
+      "locationHint": "Светлогорск, Калининградский проспект; точный GPS проверить",
+      "geoStatus": "ready_point",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        20.1512,
+        54.9439
+      ],
+      "document": "03_great_patriotic_war_places.md"
+    },
+    {
+      "id": "ww2_fischhausen",
+      "cityId": "primorsk",
+      "layer": "ww2",
+      "name": "Взятие Фишхаузена",
+      "description": "Современная мемориальная традиция фиксирует дату штурма Фишхаузена",
+      "period": "17.04.1945",
+      "kind": "battle_event + memorial",
+      "locationHint": "Приморск, братская могила; точный GPS проверить",
+      "geoStatus": "needs_georef",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        19.9984,
+        54.7315
+      ],
+      "document": "03_great_patriotic_war_places.md"
+    },
+    {
+      "id": "ww2_pillau",
+      "cityId": "baltiysk",
+      "layer": "ww2",
+      "name": "Штурм Пиллау",
+      "description": "Финальный крупный узел боёв на Самбийском полуострове; город и крепость заняты войсками 3-го Белорусского фронта",
+      "period": "апрель, город и крепость взяты 25.04.1945",
+      "kind": "battle_area",
+      "locationHint": "Балтийск: город, цитадель, порт; нужен полигон/маршрут",
+      "geoStatus": "area_required",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        19.9146,
+        54.6514
+      ],
+      "document": "03_great_patriotic_war_places.md"
+    },
+    {
+      "id": "ww2_pillau_mass_grave",
+      "cityId": "baltiysk",
+      "layer": "ww2",
+      "name": "Братская могила воинов, погибших при штурме Пиллау",
+      "description": "Основная современная памятная точка штурма Пиллау",
+      "period": "апрель 1945 / мемориал",
+      "kind": "memorial",
+      "locationHint": "Балтийск, ул. Красной Армии",
+      "geoStatus": "ready_point",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        19.9146,
+        54.6514
+      ],
+      "document": "03_great_patriotic_war_places.md"
+    },
+    {
+      "id": "ww2_frische_nehrung",
+      "cityId": "baltiysk",
+      "layer": "ww2",
+      "name": "Балтийская коса / Фрише-Нерунг",
+      "description": "Продолжение боёв после взятия Пиллау; музей «Старый Люнет» интерпретирует штурм косы и историю Нойтифа",
+      "period": "конец апреля 1945",
+      "kind": "battle_area",
+      "locationHint": "Балтийская коса; нужен маршрут/полигон",
+      "geoStatus": "area_required",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        19.9146,
+        54.6514
+      ],
+      "document": "03_great_patriotic_war_places.md"
+    },
+    {
+      "id": "ww2_heiligenbeil_pocket",
+      "cityId": "mamonovo",
+      "layer": "ww2",
+      "name": "Район Хайлигенбайля / Мамоново",
+      "description": "Ликвидация окружённой группировки к юго-западу от Кёнигсберга; в туристических материалах обозначается как «Хайлигенбайльский котёл»",
+      "period": "март 1945",
+      "kind": "battle_area",
+      "locationHint": "Мамоново и юго-запад области; требуется академическая геопривязка",
+      "geoStatus": "research",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        19.9382,
+        54.4643
+      ],
+      "document": "03_great_patriotic_war_places.md"
+    },
+    {
+      "id": "ww2_wehlau_model",
+      "cityId": "znamensk",
+      "layer": "ww2",
+      "name": "Велау: место создания макета Кёнигсберга",
+      "description": "В одном из домов Велау военные инженеры создали масштабный макет Кёнигсберга для отработки вариантов штурма",
+      "period": "февраль 1945",
+      "kind": "planning_site",
+      "locationHint": "Знаменск; конкретный дом пока не установлен",
+      "geoStatus": "needs_georef",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        21.2249,
+        54.6146
+      ],
+      "document": "03_great_patriotic_war_places.md"
+    },
+    {
+      "id": "fol_rossitten_cluster",
+      "cityId": "rybachy",
+      "layer": "folklore",
+      "name": "Рыбачий / Росситтен · Большая часть мифологии Куршской косы привязана к Росситтену/Расите",
+      "description": "Сделать Рыбачий «узлом историй», из которого раскрываются отдельные легенды",
+      "period": "многослойная традиция",
+      "kind": "folklore_cluster",
+      "locationHint": "Рыбачий / Росситтен",
+      "geoStatus": "ready_point",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        20.8533,
+        55.1558
+      ],
+      "document": "04_myths_folklore.md"
+    },
+    {
+      "id": "fol_neringa",
+      "cityId": "rybachy",
+      "layer": "folklore",
+      "name": "Куршская коса · Великанша Неринга и происхождение косы",
+      "description": "Маркировать как миф, не как исторический факт",
+      "period": "куршская/балтийская традиция в поздних пересказах",
+      "kind": "myth",
+      "locationHint": "Куршская коса",
+      "geoStatus": "area_required",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        20.8533,
+        55.1558
+      ],
+      "document": "04_myths_folklore.md"
+    },
+    {
+      "id": "fol_heinrich_kunzen",
+      "cityId": "rybachy",
+      "layer": "folklore",
+      "name": "Куршская коса / район Кунцена · Легенда о Генрихе фон Кунцене",
+      "description": "Связать с исчезнувшими поселениями и темой песчаных катастроф",
+      "period": "историко-легендарный цикл косы",
+      "kind": "legend",
+      "locationHint": "Куршская коса / район Кунцена",
+      "geoStatus": "needs_georef",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        20.8533,
+        55.1558
+      ],
+      "document": "04_myths_folklore.md"
+    },
+    {
+      "id": "fol_rossitten_cat",
+      "cityId": "rybachy",
+      "layer": "folklore",
+      "name": "Росситтен / Рыбачий · История о кошке, погубившей постояльцев трактира",
+      "description": "Не указывать конкретный трактир без географического подтверждения",
+      "period": "поздний пересказ сюжета, действие отнесено к 1481",
+      "kind": "legend / tale",
+      "locationHint": "Росситтен / Рыбачий",
+      "geoStatus": "needs_georef",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        20.8533,
+        55.1558
+      ],
+      "document": "04_myths_folklore.md"
+    },
+    {
+      "id": "fol_dancing_forest_prediniya",
+      "cityId": "rybachy",
+      "layer": "folklore",
+      "name": "Танцующий лес · Прединия, музыка и «танцующие» деревья",
+      "description": "Рядом обязательно показать факт: лес высажен в XX веке; легенда — отдельный слой",
+      "period": "современно записанная авторская легенда",
+      "kind": "literary_legend",
+      "locationHint": "Танцующий лес",
+      "geoStatus": "ready_point",
+      "mapPrecision": "point",
+      "coordinates": [
+        20.9534617,
+        55.2679392
+      ],
+      "document": "04_myths_folklore.md"
+    },
+    {
+      "id": "fol_dancing_forest_modern",
+      "cityId": "rybachy",
+      "layer": "folklore",
+      "name": "Танцующий лес · Порталы, аномальная энергия, великаны, ведьмы и другие современные объяснения",
+      "description": "Можно показать «варианты рассказа», не выбирать один как истинный",
+      "period": "XX–XXI вв.",
+      "kind": "modern_folklore",
+      "locationHint": "Танцующий лес",
+      "geoStatus": "ready_point",
+      "mapPrecision": "point",
+      "coordinates": [
+        20.9534617,
+        55.2679392
+      ],
+      "document": "04_myths_folklore.md"
+    },
+    {
+      "id": "fol_swan_lake_princess",
+      "cityId": "rybachy",
+      "layer": "folklore",
+      "name": "Озеро Лебедь · Заколдованная царевна/принцесса Лебедь",
+      "description": "Хороший пример позднего туристического фольклора",
+      "period": "современная локальная байка, опирающаяся на сказочный образ",
+      "kind": "modern_folklore",
+      "locationHint": "Озеро Лебедь",
+      "geoStatus": "ready_point",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        20.8533,
+        55.1558
+      ],
+      "document": "04_myths_folklore.md"
+    },
+    {
+      "id": "fol_jurate_kastytis",
+      "cityId": "yantarny",
+      "layer": "folklore",
+      "name": "Балтийское побережье / янтарная тема · Юрате и Каститис; янтарь как осколки замка и слёзы Юрате",
+      "description": "Не приписывать легенду древним пруссам; лучше геометрия coast/region",
+      "period": "литовская/жемайтская легенда",
+      "kind": "myth",
+      "locationHint": "Балтийское побережье / янтарная тема",
+      "geoStatus": "area_required",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        19.9406,
+        54.8715
+      ],
+      "document": "04_myths_folklore.md"
+    },
+    {
+      "id": "fol_white_elk_flounder",
+      "cityId": "yantarny",
+      "layer": "folklore",
+      "name": "Балтийское побережье · «Белый лось и золотая камбала»",
+      "description": "Нужна отдельная работа по первоисточнику и географической привязке",
+      "period": "в экспозиции Музея янтаря обозначена как прусская легенда",
+      "kind": "legend",
+      "locationHint": "Балтийское побережье",
+      "geoStatus": "research",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        19.9406,
+        54.8715
+      ],
+      "document": "04_myths_folklore.md"
+    },
+    {
+      "id": "fol_konigsberg_underground",
+      "cityId": "kaliningrad",
+      "layer": "folklore",
+      "name": "Место Королевского замка / центр Калининграда · «Подземный город» под Кёнигсбергом",
+      "description": "Карточка должна прямо говорить, что туристический источник называет это легендой",
+      "period": "XX–XXI вв.",
+      "kind": "urban_legend",
+      "locationHint": "Место Королевского замка / центр Калининграда",
+      "geoStatus": "ready_point",
+      "mapPrecision": "point",
+      "coordinates": [
+        20.5095709,
+        54.7104457
+      ],
+      "document": "04_myths_folklore.md"
+    },
+    {
+      "id": "fol_amber_room_castle",
+      "cityId": "kaliningrad",
+      "layer": "folklore",
+      "name": "Королевский замок · Исчезновение Янтарной комнаты и версии о её хранении в Кёнигсберге",
+      "description": "Разделить подтверждённый маршрут Янтарной комнаты и неподтверждённые версии",
+      "period": "с 1945 г. и позднее",
+      "kind": "hypothesis / urban_legend",
+      "locationHint": "Королевский замок",
+      "geoStatus": "ready_point",
+      "mapPrecision": "point",
+      "coordinates": [
+        20.5095709,
+        54.7104457
+      ],
+      "document": "04_myths_folklore.md"
+    },
+    {
+      "id": "fol_anna_mine",
+      "cityId": "yantarny",
+      "layer": "folklore",
+      "name": "Янтарный / шахта «Анна» · Версия, что Янтарная комната могла быть скрыта/затоплена в шахте",
+      "description": "Не обозначать как «тайник»; только как историю поисков и версию",
+      "period": "послевоенные поисковые версии",
+      "kind": "hypothesis / urban_legend",
+      "locationHint": "Янтарный / шахта «Анна»",
+      "geoStatus": "needs_georef",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        19.9406,
+        54.8715
+      ],
+      "document": "04_myths_folklore.md"
+    },
+    {
+      "id": "fol_insterburg_witch",
+      "cityId": "chernyakhovsk",
+      "layer": "folklore",
+      "name": "Замок Инстербург, Черняховск · История о «последней ведьме Европы», якобы казнённой в замке",
+      "description": "Официальный туристический ресурс прямо отмечает, что достоверно проверить легенду нельзя",
+      "period": "современный экскурсионный рассказ",
+      "kind": "urban_legend",
+      "locationHint": "Замок Инстербург, Черняховск",
+      "geoStatus": "ready_point",
+      "mapPrecision": "point",
+      "coordinates": [
+        21.8067414,
+        54.6396478
+      ],
+      "document": "04_myths_folklore.md"
+    },
+    {
+      "id": "fol_bunker_magic",
+      "cityId": "kaliningrad",
+      "layer": "folklore",
+      "name": "Бункер, Калининград · Версия о рунических знаках как «магической защите» штаба",
+      "description": "Привязать к реальному объекту, но чётко маркировать «по одной из версий»",
+      "period": "современная интерпретация",
+      "kind": "hypothesis / urban_legend",
+      "locationHint": "Бункер, Калининград",
+      "geoStatus": "ready_point",
+      "mapPrecision": "point",
+      "coordinates": [
+        20.5096902,
+        54.7131417
+      ],
+      "document": "04_myths_folklore.md"
+    },
+    {
+      "id": "fol_homlins",
+      "cityId": "kaliningrad",
+      "layer": "folklore",
+      "name": "Калининград, серия скульптур хомлинов · Семья маленьких «домовых» как современная городская легенда",
+      "description": "Отдельный кластер из нескольких точек; хороший пример живого фольклора",
+      "period": "XXI век",
+      "kind": "modern_urban_folklore",
+      "locationHint": "Калининград, серия скульптур хомлинов",
+      "geoStatus": "cluster",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        20.4522,
+        54.7104
+      ],
+      "document": "04_myths_folklore.md"
+    },
+    {
+      "id": "lit_hoffmann_birth",
+      "cityId": "kaliningrad",
+      "layer": "literature",
+      "name": "Калининград, район бывшей Französische Straße 25 · Э. Т. А. Гофман",
+      "description": "Гофман родился в Кёнигсберге в 1776 году; в городе существует памятный знак, связанный с местом дома",
+      "period": "Э. Т. А. Гофман",
+      "kind": "birthplace",
+      "locationHint": "район Нижнего пруда; точный исторический участок следует сверить с картой кварталов",
+      "geoStatus": "needs_georef",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        20.4522,
+        54.7104
+      ],
+      "document": "05_literary_places.md"
+    },
+    {
+      "id": "lit_hoffmann_rossitten",
+      "cityId": "rybachy",
+      "layer": "literature",
+      "name": "Рыбачий / Росситтен, место бывшего замка · Э. Т. А. Гофман, «Майорат»",
+      "description": "Национальный парк связывает руины Росситтенского замка с поездкой Гофмана и новеллой «Майорат»",
+      "period": "Э. Т. А. Гофман, «Майорат»",
+      "kind": "work_setting + author_visit",
+      "locationHint": "Рыбачий; место замка исчезло, нужен исторический полигон/точка",
+      "geoStatus": "needs_georef",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        20.8533,
+        55.1558
+      ],
+      "document": "05_literary_places.md"
+    },
+    {
+      "id": "lit_bobrowski_birth",
+      "cityId": "sovetsk",
+      "layer": "literature",
+      "name": "Советск / Тильзит · Иоганнес Бобровский",
+      "description": "Родился 9 апреля 1917 года в Тильзите",
+      "period": "Иоганнес Бобровский",
+      "kind": "birthplace",
+      "locationHint": "исторический адрес требует проверки современного номера; городская точка пока не ставится точно",
+      "geoStatus": "needs_georef",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        21.8885,
+        55.0806
+      ],
+      "document": "05_literary_places.md"
+    },
+    {
+      "id": "lit_bobrowski_konigsberg",
+      "cityId": "kaliningrad",
+      "layer": "literature",
+      "name": "Калининград / Кёнигсберг · Иоганнес Бобровский",
+      "description": "Юность и образование Бобровского связаны с Кёнигсбергом; перспективная тема для отдельного маршрута",
+      "period": "Иоганнес Бобровский",
+      "kind": "education / biography",
+      "locationHint": "нужны подтверждённые адреса школы/семьи",
+      "geoStatus": "research",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        20.4522,
+        54.7104
+      ],
+      "document": "05_literary_places.md"
+    },
+    {
+      "id": "lit_buida_znamensk",
+      "cityId": "znamensk",
+      "layer": "literature",
+      "name": "Знаменск / Велау · Юрий Буйда; «Прусская невеста» и др.",
+      "description": "Юрий Буйда родился в Знаменске; восточно-прусское пограничное пространство существенно для его прозы",
+      "period": "Юрий Буйда; «Прусская невеста» и др.",
+      "kind": "birthplace + regional_imaginary",
+      "locationHint": "город как литературный якорь; точный дом не установлен",
+      "geoStatus": "rough_anchor",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        21.2249,
+        54.6146
+      ],
+      "document": "05_literary_places.md"
+    },
+    {
+      "id": "lit_snegov_house",
+      "cityId": "kaliningrad",
+      "layer": "literature",
+      "name": "Калининград, ул. 9 Апреля, 34 · Сергей Снегов",
+      "description": "Писатель прожил здесь около 20 лет; в 1999 году установлена памятная доска",
+      "period": "Сергей Снегов",
+      "kind": "residence",
+      "locationHint": "ул. 9 Апреля, 34",
+      "geoStatus": "ready_point",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        20.4522,
+        54.7104
+      ],
+      "document": "05_literary_places.md"
+    },
+    {
+      "id": "lit_snegov_library",
+      "cityId": "kaliningrad",
+      "layer": "literature",
+      "name": "Калининград, библиотека им. С. А. Снегова · Сергей Снегов",
+      "description": "Современный центр литературной памяти писателя",
+      "period": "Сергей Снегов",
+      "kind": "memory_institution",
+      "locationHint": "точный адрес взять из реестра КЦБС при следующем проходе",
+      "geoStatus": "needs_georef",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        20.4522,
+        54.7104
+      ],
+      "document": "05_literary_places.md"
+    },
+    {
+      "id": "lit_kuranov_svetlogorsk",
+      "cityId": "svetlogorsk",
+      "layer": "literature",
+      "name": "Светлогорск · Юрий Куранов",
+      "description": "Писатель жил в Светлогорске; ежегодно проводятся Курановские чтения и возложение цветов к памятной доске",
+      "period": "Юрий Куранов",
+      "kind": "residence / memory",
+      "locationHint": "адрес доски требует отдельной проверки",
+      "geoStatus": "needs_georef",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        20.1512,
+        54.9439
+      ],
+      "document": "05_literary_places.md"
+    },
+    {
+      "id": "lit_kuranov_library",
+      "cityId": "zelenogradsk",
+      "layer": "literature",
+      "name": "Зеленоградск, ул. Ленина, 1 · Юрий Куранов",
+      "description": "Центральная библиотека носит имя писателя; действует литературно-музейная экспозиция",
+      "period": "Юрий Куранов",
+      "kind": "memory_institution",
+      "locationHint": "Зеленоградск, ул. Ленина, 1",
+      "geoStatus": "ready_point",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        20.475,
+        54.96
+      ],
+      "document": "05_literary_places.md"
+    },
+    {
+      "id": "lit_dmitrovsky_library",
+      "cityId": "svetlogorsk",
+      "layer": "literature",
+      "name": "Светлогорск, ул. Яблоневая, 6 · Алексей Дмитровский",
+      "description": "Центральной библиотеке присвоено имя филолога и писателя/литературного деятеля А. З. Дмитровского",
+      "period": "Алексей Дмитровский",
+      "kind": "memory_institution",
+      "locationHint": "ул. Яблоневая, 6",
+      "geoStatus": "ready_point",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        20.1512,
+        54.9439
+      ],
+      "document": "05_literary_places.md"
+    },
+    {
+      "id": "lit_frieda_jung",
+      "cityId": "chernyakhovsk",
+      "layer": "literature",
+      "name": "Черняховск / Инстербург · Фрида Юнг",
+      "description": "На одном из домов Театральной улицы туристический путеводитель отмечает памятную табличку Фриде Юнг",
+      "period": "Фрида Юнг",
+      "kind": "memory_place",
+      "locationHint": "точный номер дома надо установить",
+      "geoStatus": "needs_georef",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        21.8101325,
+        54.6326621
+      ],
+      "document": "05_literary_places.md"
+    },
+    {
+      "id": "lit_solzhenitsyn_east_prussia",
+      "cityId": "kaliningrad",
+      "layer": "literature",
+      "name": "Восточная Пруссия, январь 1945 · Александр Солженицын; «Прусские ночи», «Пир победителей»",
+      "description": "Официальный ресурс Центра Солженицына связывает эти произведения с фронтовыми впечатлениями автора в Восточной Пруссии",
+      "period": "Александр Солженицын; «Прусские ночи», «Пир победителей»",
+      "kind": "wartime_route + work_source",
+      "locationHint": "не точка; нужен маршрут по документированному боевому пути автора",
+      "geoStatus": "research",
+      "mapPrecision": "anchor",
+      "coordinates": [
+        20.4522,
+        54.7104
+      ],
+      "document": "05_literary_places.md"
+    }
+  ]
+}

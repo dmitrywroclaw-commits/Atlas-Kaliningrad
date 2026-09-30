@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Иллюстрация места">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#b5cacc"/><stop offset="1" stop-color="#e9e5d8"/></linearGradient>
+  </defs>
+  <rect width="120" height="120" fill="url(#sky)"/>
+  <path d="M0 80c21-11 36-8 52-3 24-15 46-13 68-5v48H0z" fill="#99ad9a"/>
+  <path d="M0 93c24-6 44-2 59 4 25-9 43-8 61-5v28H0z" fill="#6c8d88"/>
+  <path d="M34 78V49l26-16 27 16v29z" fill="#f3ebd8" stroke="#6c756a" stroke-width="2"/>
+  <path d="M46 53V37h11v15M28 50l32-23 34 23" fill="none" stroke="#6c756a" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M55 78V59h11v19" fill="#91a5a3" stroke="#6c756a" stroke-width="2"/>
+  <circle cx="79" cy="59" r="5" fill="#c6aa76"/>
+</svg>

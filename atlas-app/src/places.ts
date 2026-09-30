@@ -1,7 +1,7 @@
 import placeData from './places-data.json';
 import type { EraId } from './data';
 
-export type PlaceKind = 'castle' | 'church' | 'bridge' | 'quarter' | 'museum' | 'tower' | 'monument' | 'building' | 'fortification';
+export type PlaceKind = 'castle' | 'church' | 'bridge' | 'quarter' | 'museum' | 'tower' | 'monument' | 'building' | 'fortification' | 'battlefield' | 'route' | 'story';
 export interface AtlasPlace {
   id: string;
   cityId: string;
@@ -15,6 +15,7 @@ export interface AtlasPlace {
 export const placeTypeNames: Record<PlaceKind, string> = {
   castle: 'Замок и крепость', church: 'Храм', bridge: 'Мост', quarter: 'Городской квартал',
   museum: 'Музей', tower: 'Башня', monument: 'Памятное место', building: 'Историческое здание', fortification: 'Городские укрепления',
+  battlefield: 'Район события', route: 'Маршрут', story: 'Место рассказа',
 };
 export const places = placeData as AtlasPlace[];
 export function getCityPlaces(cityId: string, era: EraId) {
